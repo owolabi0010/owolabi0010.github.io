@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wizdom Baggy Jeans</title>
+  <meta name="description" content="Wizdom Baggy Jeans. Brand purple jeans from N18,000." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="logo" href="#" id="logo">Wizdom Baggy Jeans</a>
+      <nav>
+        <a href="#shop">Shop</a>
+        <a href="#how">How it works</a>
+        <a class="btn btn-small" href="#shop">Buy now</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow" id="eyebrow"></p>
+        <h1 id="headline"></h1>
+        <p class="lead" id="intro"></p>
+        <p class="pay-mode" id="pay-mode"></p>
+        <div class="actions">
+          <a class="btn" href="#shop">See products</a>
+          <a class="btn btn-ghost" id="wa-header" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-label" id="featured-label">From N18,000</p>
+        <h2 id="featured-name"></h2>
+        <p id="featured-desc"></p>
+        <p class="price" id="featured-price"></p>
+        <button class="btn btn-full" type="button" id="featured-buy">Buy</button>
+      </div>
+    </div>
+  </section>
+  <section id="shop" class="shop">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="shop-title">The jeans</h2>
+        <p id="shop-subtitle"></p>
+      </div>
+      <div class="grid" id="product-grid"></div>
+    </div>
+  </section>
+  <section id="how" class="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How buying works</h2>
+      </div>
+      <ol class="steps" id="steps"></ol>
+    </div>
+  </section>
+  <footer class="foot">
+    <div class="wrap">
+      <p><strong id="footer-name"></strong></p>
+      <p id="footer-note"></p>
+    </div>
+  </footer>
+  <div id="pay-overlay" class="overlay" hidden>
+    <div class="modal" role="dialog" aria-labelledby="pay-title">
+      <button class="modal-x" type="button" data-close-pay aria-label="Close">x</button>
+      <p class="eyebrow">Checkout</p>
+      <h2 id="pay-title">Product</h2>
+      <p class="price" id="pay-price">N0</p>
+      <form id="pay-form">
+        <label for="pay-email">Email for receipt</label>
+        <input id="pay-email" type="email" required placeholder="you@email.com" autocomplete="email" />
+        <p class="error" id="pay-error"></p>
+        <button class="btn btn-full" type="submit">Continue to Paystack</button>
+      </form>
+      <button class="linkish" type="button" data-whatsapp>Prefer WhatsApp instead</button>
+    </div>
+  </div>
+  <script src="https://js.paystack.co/v2/inline.js"></script>
+  <script src="config.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
